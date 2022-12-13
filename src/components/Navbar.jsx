@@ -38,7 +38,7 @@ const Navbar = () => {
    (screenSize<=900)?setActiveMenu(false): setActiveMenu(true)
   }, [screenSize])
   return (
-    <div className='flex justify-between p-2 relative md:mx-6 '>
+    <div className='flex justify-between p-2 relative md:mx-6 bg-main-bg '>
       <NavButton title='Menu' customFunc={()=>{ setActiveMenu((prev)=>!prev)}}  color={ curentColor } icon={<AiOutlineMenu />} />
       <div className='flex'>
         <NavButton title='Cart' customFunc={()=>{handleClick('cart')}}  color={ curentColor } icon={<FiShoppingCart />}/>
